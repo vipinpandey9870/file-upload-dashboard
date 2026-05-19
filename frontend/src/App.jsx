@@ -25,7 +25,7 @@ function App() {
     setStatus("Uploading...");
 
     try {
-      const response = await axios.post("http://localhost:8080/upload", formData, {
+      const response = await axios.post("https://file-upload-dashboard.onrender.com/upload", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
